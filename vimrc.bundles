@@ -24,13 +24,20 @@ call vundle#rc()
 " :BundleClean       remove plugin not in list 删除本地无用插件
 Bundle 'gmarik/vundle'
 
+"################### PHP/Laravel ################
+"Bundle 'Shougo/vimproc'
+"Bundle 'Shougo/unite.vim'
+"Bundle 'm2mdas/phpcomplete-extended'
+"let g:phpcomplete_index_composer_command='composer'
+Bundle 'xsbeats/vim-blade'
+
 
 "################### 基础 ######################
 
 " 多语言语法检查
 Bundle 'scrooloose/syntastic'
-let g:syntastic_error_symbol='>>'
-let g:syntastic_warning_symbol='>'
+let g:syntastic_error_symbol='e'
+let g:syntastic_warning_symbol='w'
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_highlighting = 0
 "let g:syntastic_python_checker="flake8,pyflakes,pep8,pylint"
@@ -219,12 +226,12 @@ Bundle 'bling/vim-airline'
 if !exists('g:airline_symbols')
 let g:airline_symbols = {}
 endif
-let g:airline_left_sep = '▶'
-let g:airline_left_alt_sep = '❯'
-let g:airline_right_sep = '◀'
-let g:airline_right_alt_sep = '❮'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
+"let g:airline_left_sep = '▶'
+"let g:airline_left_alt_sep = '❯'
+"let g:airline_right_sep = '◀'
+"let g:airline_right_alt_sep = '❮'
+"let g:airline_symbols.linenr = '¶'
+"let g:airline_symbols.branch = '⎇'
 let g:airline_powerline_fonts = 1
 
 
