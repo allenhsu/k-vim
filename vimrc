@@ -418,9 +418,9 @@ noremap <leader>0 :tablast<cr>
 " Toggles between the active and last active tab "
 " The first tab is always 1 "
 let g:last_active_tab = 1
-" nnoremap <leader>gt :execute 'tabnext ' . g:last_active_tab<cr>
-nnoremap <silent> <c-l> :execute 'tabnext ' . g:last_active_tab<cr>
-vnoremap <silent> <c-l> :execute 'tabnext ' . g:last_active_tab<cr>
+nnoremap <leader>gt :execute 'tabnext ' . g:last_active_tab<cr>
+" nnoremap <silent> <c-l> :execute 'tabnext ' . g:last_active_tab<cr>
+" vnoremap <silent> <c-l> :execute 'tabnext ' . g:last_active_tab<cr>
 autocmd TabLeave * let g:last_active_tab = tabpagenr()
 
 
