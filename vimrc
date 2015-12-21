@@ -625,5 +625,5 @@ highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
 
-set textwidth=72
-set colorcolumn=+1
+"set textwidth=72
+"set colorcolumn=+1
