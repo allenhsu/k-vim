@@ -17,7 +17,7 @@ filetype off " required! turn off
 " inspired by spf13, 自定义需要的插件集合
 if !exists('g:bundle_groups')
     " more options: ['json', 'nginx', 'golang', 'ruby', 'less', 'json', ]
-    let g:bundle_groups=['python', 'javascript', 'markdown', 'html', 'css', 'tmux', 'beta']
+    let g:bundle_groups=['python', 'javascript', 'markdown', 'html', 'css', 'tmux', 'beta', 'json']
 endif
 
 " ----------------------------------------------------------------------------
@@ -755,10 +755,10 @@ call plug#end()
 
 
 "###### less ######
-Bundle 'groenewege/vim-less'
+Plug 'groenewege/vim-less'
 
 "###### jedi-vim ######
-" Bundle 'davidhalter/jedi-vim'
+" Plug 'davidhalter/jedi-vim'
 " let g:jedi#use_tabs_not_buffers = 0
 " let g:jedi#popup_on_dot = 0
 " let g:jedi#popup_select_first = 0
