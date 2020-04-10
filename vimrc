@@ -575,6 +575,7 @@ autocmd FileType ruby,javascript,html,css,xml set tabstop=2 shiftwidth=2 softtab
 autocmd BufRead,BufNewFile *.md,*.mkd,*.markdown set filetype=markdown.mkd
 autocmd BufRead,BufNewFile *.part set filetype=html
 autocmd BufRead,BufNewFile *.vue setlocal filetype=vue.html.javascript tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
+autocmd BufRead,BufNewFile Podfile,Fastfile set filetype=ruby tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
 
 " disable showmatch when use > in php
 au BufWinEnter *.php set mps-=<:>
@@ -675,3 +676,9 @@ highlight clear SpellRare
 highlight SpellRare term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
+
+
+" allen
+if has('python3')
+  silent! python3 1
+endif

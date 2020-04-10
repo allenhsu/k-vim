@@ -898,3 +898,6 @@ endif
 Plug 'mxw/vim-jsx'
 let g:jsx_ext_required = 0
 let g:syntastic_javascript_checkers = ['eslint']
+
+Plug 'hashivim/vim-terraform'
+Plug '/usr/local/opt/fzf'
