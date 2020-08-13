@@ -906,3 +906,4 @@ let g:syntastic_javascript_checkers = ['eslint']
 Plug 'hashivim/vim-terraform'
 Plug '/usr/local/opt/fzf'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'flowtype/vim-flow'

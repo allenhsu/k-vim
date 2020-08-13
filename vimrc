@@ -682,3 +682,11 @@ highlight SpellLocal term=underline cterm=underline
 if has('python3')
   silent! python3 1
 endif
+
+let g:ycm_language_server = [
+  \   {
+  \     'name': 'ruby',
+  \     'cmdline': [ '/Users/allen/.rbenv/shims/solargraph', 'stdio' ],
+  \     'filetypes': [ 'ruby' ],
+  \   },
+  \ ]
